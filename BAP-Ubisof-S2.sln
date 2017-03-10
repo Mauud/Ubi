@@ -1,0 +1,23 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{4A9D1633-887D-EC50-B873-FC5A3DECD49E}") = "BAP-Ubisof-S2", "Assembly-CSharp.csproj", "{ABFFEF0E-4C1A-79CE-9569-C4999B913434}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ABFFEF0E-4C1A-79CE-9569-C4999B913434}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABFFEF0E-4C1A-79CE-9569-C4999B913434}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABFFEF0E-4C1A-79CE-9569-C4999B913434}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABFFEF0E-4C1A-79CE-9569-C4999B913434}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
