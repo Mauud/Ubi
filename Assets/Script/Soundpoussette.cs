@@ -7,7 +7,7 @@ public class Soundpoussette : MonoBehaviour {
     public bool positionbois = false;
     public bool positiongravier = false;
     public bool positionherbe = false;
-   
+  
     private AudioSource sons;
     public AudioClip soundbois;
     public AudioClip soundgravier;
@@ -23,9 +23,8 @@ public class Soundpoussette : MonoBehaviour {
         // Est sur du bois
         if (other.gameObject.name == "box trigger bois")
         {
-            sons.Stop(soundherbe);
-            sons.Stop(soundgravier);
-            sons.PlayOneShot(soundbois);
+            sons.clip = soundbois;
+            sons.Play();
             positionbois = true;
             positionherbe = false;
             positiongravier = false;
@@ -34,9 +33,8 @@ public class Soundpoussette : MonoBehaviour {
         // Est sur de l'herbe ou terre
         else if (other.gameObject.name == "box trigger herbe")
         {
-            sons.Stop(soundherbe);
-            sons.Stop(soundgravier);
-            sons.PlayOneShot(soundherbe);
+            sons.clip = soundherbe;
+            sons.Play();
             positionbois = false;
             positionherbe = true;
             positiongravier = false;
@@ -45,8 +43,8 @@ public class Soundpoussette : MonoBehaviour {
         // Est sur du gravier
         else if (other.gameObject.name == "box trigger gravier")
         {
-            sons.Stop();
-            sons.PlayOneShot(soundgravier);
+            sons.clip = soundgravier;
+            sons.Play();
             positionbois = false;
             positionherbe = false;
             positiongravier = true;
@@ -55,7 +53,8 @@ public class Soundpoussette : MonoBehaviour {
         //Est a l'arret
         else
         {
-            sons.Stop();
+            sons.clip = soundgravier;
+            sons.Play();
             positionbois = false;
             positionherbe = false;
             positiongravier = false;

@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/game.unity
+- path: C:/Users/Maud/Documents/GitHub/BAPUbisoft/Assets/Scenes/MainMenu.unity
   isLoaded: 1
   isActive: 1

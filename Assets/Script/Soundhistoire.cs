@@ -19,28 +19,28 @@ public class Soundhistoire : MonoBehaviour
         // Raconte histoire un
         if (other.gameObject.name == "box trigger histoire un")
         {
-            sonshistoire.Stop();
+            //sonshistoire.Stop();
             sonshistoire.PlayOneShot(histoireun);
         }
 
         // Raconte histoire deux
         else if (other.gameObject.name == "box trigger histoire deux")
         {
-            sonshistoire.Stop();
+           // sonshistoire.Stop();
             sonshistoire.PlayOneShot(histoiredeux);
         }
 
         // Raconte histoire trois
         else if (other.gameObject.name == "box trigger histoire trois")
         {
-            sonshistoire.Stop();
+            //sonshistoire.Stop();
             sonshistoire.PlayOneShot(histoiretrois);
         }
 
         // Se tait
         else
         {
-            sonshistoire.Stop();
+           // sonshistoire.Stop();
         }
 
     }
